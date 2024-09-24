@@ -1,6 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://n6p0fxvs71n0"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_48xol"]
+[ext_resource type="PackedScene" uid="uid://celi4lbkuf60x" path="res://character.tscn" id="1_74w7h"]
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_48xol")
+
+[node name="PlayerFarmer" parent="." instance=ExtResource("1_74w7h")]
+position = Vector2(365, 228)
